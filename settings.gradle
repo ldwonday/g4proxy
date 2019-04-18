@@ -1,0 +1,4 @@
+include ':app',
+        ':LittleProxy',
+        ':g4proxy-server',
+        ':g4proxy-lib'

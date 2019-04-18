@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    api 'org.slf4j:slf4j-api:1.7.24'
+    api 'io.netty:netty-codec:4.0.44.Final'
+    api 'io.netty:netty-handler:4.0.44.Final'
+    api 'io.netty:netty-transport-udt:4.0.44.Final'
+    api 'com.google.guava:guava:18.0'
+    api project(':LittleProxy')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
