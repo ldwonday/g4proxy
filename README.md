@@ -13,6 +13,7 @@ a http proxy witch use cell phone network
 ### 服务器部署
 
 1。 选择需要在公网上面的服务器，且需要有足够的端口资源。
+
 2。 修改代码： com.virjar.g4proxyserver.G4proxyServerApplication
 ```
  ProxyInstanceHolder.g4ProxyServer = new G4ProxyServer(50000);
